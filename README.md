@@ -14,7 +14,7 @@ https://website-audit-tool-nine.vercel.app/
 
 Backend:
 
-https://website-audit-tool-pk19.onrender.com
+https://website-audit-tool-pk19.onrender.com/api/audit
 
 ---
 
