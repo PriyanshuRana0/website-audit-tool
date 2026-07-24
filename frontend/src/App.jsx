@@ -14,9 +14,9 @@ function App() {
     setReport(null);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/audit", {
-        url,
-      });
+      const response = await axios.post("https://website-audit-tool-pk19.onrender.com/api/audit", {
+  url,
+});
 
       setReport(response.data);
     } catch (err) {
