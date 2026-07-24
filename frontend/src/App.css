@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #eef2f7;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #cbd5e1;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+}
+
+.search-box button {
+  padding: 14px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: .3s;
+}
+
+.search-box button:hover {
+  background: #1d4ed8;
+}
+
+.card {
+  margin-top: 30px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row span:first-child {
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loading {
+  margin-top: 20px;
+  text-align: center;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box button{
+    width:100%;
+}
+
+.row{
+    flex-direction:column;
+    gap:6px;
+}
+
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #64748b;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
